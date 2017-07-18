@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huangxueqin.hqpullrefreshlayout.HQPullRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pullRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:refreshOffset="80dp">
+
+    <com.huangxueqin.hqpullrefreshlayout.header.PlainTextHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        app:spinnerColor="@android:color/white"
+        app:titleColor="@android:color/white"
+        app:titleSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="启动ListTestActivity"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+</com.huangxueqin.hqpullrefreshlayout.HQPullRefreshLayout>

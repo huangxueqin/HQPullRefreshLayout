@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huangxueqin.testapp.MainActivity">
+
+    <com.huangxueqin.hqpullrefreshlayout.HQPullRefreshLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pullRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refreshOffset="80dp"
+        app:pinHeader="true">
+
+        <com.huangxueqin.hqpullrefreshlayout.header.PlainTextHeaderView
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleColor="@android:color/white"
+            app:titleSize="14sp"
+            app:spinnerColor="@android:color/white" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"/>
+    </com.huangxueqin.hqpullrefreshlayout.HQPullRefreshLayout>
+
+</FrameLayout>
